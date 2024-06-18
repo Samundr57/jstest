@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  width: 23%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-price span {
+  font-size: 0.8em;
+  color: #999;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-rating i {
+  color: #ffc107;
+  margin-right: 5px;
+}
+
+.card-button {
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.card-discount span {
+  font-size: 0.8em;
+}
+
+.card-sizes {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.card-size {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.card-size.active {
+  background-color: red;
+  color: #fff;
+}
+
+.card-promo {
+  background-color: purple;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.card-promo span {
+  font-size: 0.8em;
+}
+
+.card-heart {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: #dc3545;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <div class="card-discount"><span>-25%</span></div>
+    <i class="card-heart fas fa-heart"></i>
+    <img src="trialimages/whitedress.jpg" alt="Product Image">
+    <div class="card-content">
+      <h2 class="card-title">White traditional long dress</h2>
+      <p class="card-price">$3.99 <span>$5.90</span></p>
+      <div class="card-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>4.8</span>
+      </div>
+      <div class="card-sizes">
+        <div class="card-size">S</div>
+        <div class="card-size active">M</div>
+        <div class="card-size">L</div>
+      </div>
+      <button class="card-button">BUY +</button>
+      <div class="card-promo">
+        <span>Monday Happy</span>
+        <span>#MONHPY</span>
+        <span>20% Off</span>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-discount"><span>-25%</span></div>
+    <i class="card-heart fas fa-heart"></i>
+    <img src="trialimages/denimjacket.webp" alt="Product Image">
+    <div class="card-content">
+      <h2 class="card-title">Long sleeve denim jacket</h2>
+      <p class="card-price">$3.99 <span>$5.99</span></p>
+      <div class="card-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>4.8</span>
+      </div>
+      <div class="card-sizes">
+        <div class="card-size">S</div>
+        <div class="card-size active">M</div>
+        <div class="card-size">L</div>
+      </div>
+      <button class="card-button">BUY +</button>
+      <div class="card-promo">
+        <span>Payday Surprise</span>
+        <span>#SRPSPYDY</span>
+        <span>20% Off</span>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-discount"><span>-25%</span></div>
+    <i class="card-heart fas fa-heart"></i>
+    <img src="trialimages/hushpuppies.jpg" alt="Product Image">
+    <div class="card-content">
+      <h2 class="card-title">Hush Puppies</h2>
+      <p class="card-price">$3.99 <span>$5.90</span></p>
+      <div class="card-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <span>4.2</span>
+      </div>
+      <div class="card-sizes">
+        <div class="card-size">S</div>
+        <div class="card-size active">M</div>
+        <div class="card-size">L</div>
+      </div>
+      <button class="card-button">BUY +</button>
+      <div class="card-promo">
+        <span>First order</span>
+        <span>#HPYFRST</span>
+        <span>20% Off</span>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-discount"><span>-25%</span></div>
+    <i class="card-heart fas fa-heart"></i>
+    <img src="trialimages/skirt.jpg" alt="Product Image">
+    <div class="card-content">
+      <h2 class="card-title">Athens skirt</h2>
+      <p class="card-price">$3.99 <span>$5.99</span></p>
+      <div class="card-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+        <i class="far fa-star"></i>
+        <span>3.8</span>
+      </div>
+      <div class="card-sizes">
+        <div class="card-size">S</div>
+        <div class="card-size active">M</div>
+        <div class="card-size">L</div>
+      </div>
+      <button class="card-button">BUY +</button>
+      <div class="card-promo">
+        <span>Vegetarian Food</span>
+        <span>#VEGANLOVE</span>
+        <span>20% Off</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
